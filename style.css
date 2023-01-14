@@ -1,0 +1,175 @@
+
+
+:root{
+    --black:#1c1c1c;
+    --gray: #919191;
+    --light-gray:#ebebeb;
+    --hot-pink:#ff214f;
+    --primary-font: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--light-gray);
+    font-family: var(--primary-font);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+
+/* Start Nav Styles */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  
+   
+
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+/* Start Creative Styles  */
+.section__primary{
+    padding: 14rem 25px;
+    background: var(--light-gray);
+}
+.section__secondary{
+    padding: 14rem 25px;
+    background: var(--black);
+}
+
+.section__text{
+    font-size: 3rem;
+    font-weight:300;
+}
+
+.section__title__primary,
+.section__title__secondary,
+.section__title__tertiary{
+    flex-shrink: 0;
+}
+
+.section__title__primary{
+    color: var(--black);
+}
+.section__title__secondary{
+    color: var(--hot-pink);
+}
+
+.section__title__tertiary{
+    color: var(--light-gray);
+}
+
+.line__primary,
+.line__secondary,
+.line__tertiary{
+    width: 100%;
+    height: 1px;
+    margin-left: 5px;
+    
+}
+
+.line__primary{
+    background: var(--black);
+}
+
+.line__secondary{
+   background: var(--hot-pink);
+
+}
+
+.line__tertiary{
+    background: var(--light-gray);
+}
+
+.section__title__container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section__text__primary,
+.section__text__secondary,
+.section__text__tertiary{
+    font-size: 3rem;
+    font-weight:300;
+}
+
+.section__text__primary{
+    color: var(--black);
+}
+.section__text__secondary{
+    color: var(--hot-pink);
+}
+
+.section__text__tertiary{
+    color: var(--light-gray);
+}
+
+.photo__galery{
+
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+
+}
+
+.photo__galery > img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo___container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+@media only screen and (max-width:850px){
+
+    .photo__galery{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+   
+   }
+
+   .line__primary,
+   .line__secondary,
+   .line__tertiary{
+      display: none;
+       
+   }
+
+   .section__title__container{
+   justify-content: center;
+}
+
+.section__text__primary,
+.section__text__secondary,
+.section__text__tertiary{
+    font-size: 2.5rem;
+    font-weight:300;
+    text-align: center;
+}
+    
+    
+}
